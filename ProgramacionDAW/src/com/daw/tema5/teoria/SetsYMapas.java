@@ -22,6 +22,7 @@ public class SetsYMapas {
 		setHash.add("Almeria");
 		setHash.add("Diego");
 		
+		
 		//Al imprimir nuestra colección, vemos que solo hay 1 elemento con valor "Diego", por la condición de los SETS de que no pueden haber elementos repetidos
 		System.out.println("SetHash creado:\n"+setHash);
 		
@@ -145,6 +146,9 @@ public class SetsYMapas {
 		 * 		a) En el caso de HashMap y TreeMap... esos valores tienen que tener sentido
 		 * 3. Recorrer con un foreach cada una de las colecciones que habéis creado.
 		 */
+		
+		
+		
 		
 		
 
