@@ -1,0 +1,21 @@
+Clave: 1
+Alumno: Linares
+-----------------
+Clave: 2
+Alumno: Aguilar
+-----------------
+Clave: 3
+Alumno: Belisario
+-----------------
+Clave: 5
+Alumno: Gutierrez
+-----------------
+Clave: 6
+Alumno: Protasio
+-----------------
+Clave: 7
+Alumno: Fernandez
+-----------------
+Clave: 9
+Alumno: Castañeda
+-----------------
