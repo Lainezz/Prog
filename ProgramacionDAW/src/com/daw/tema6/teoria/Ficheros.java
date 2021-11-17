@@ -1,12 +1,6 @@
 package com.daw.tema6.teoria;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.io.Writer;
+import java.io.*;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -14,12 +8,6 @@ import java.util.TreeMap;
 public class Ficheros {
 
 	public static void main(String[] args){
-		
-		
-		
-		
-		
-		
 		try {
 			//1º Abrimos el fichero donde queramos escribir / leer
 			File fichero = new File("./ficheros/prueba.txt");
@@ -106,7 +94,7 @@ public class Ficheros {
 			// TODO: handle exception
 		}
 		
-		//
+		//https://github.com/Lainezz/Prog
 		
 	}
 
