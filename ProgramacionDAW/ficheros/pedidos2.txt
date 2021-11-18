@@ -1,0 +1,50 @@
+<pedido>
+  <id>106</id>
+  <producto>prod0</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>107</id>
+  <producto>prod1</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>108</id>
+  <producto>prod2</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>109</id>
+  <producto>prod3</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>110</id>
+  <producto>prod4</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>111</id>
+  <producto>prod5</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>112</id>
+  <producto>prod6</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>113</id>
+  <producto>prod7</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>114</id>
+  <producto>prod8</producto>
+  <pagado>true</pagado>
+</pedido>
+<pedido>
+  <id>115</id>
+  <producto>prod9</producto>
+  <pagado>true</pagado>
+</pedido>

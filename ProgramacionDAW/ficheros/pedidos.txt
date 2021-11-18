@@ -1,50 +1,77 @@
 <pedido>
-  <id>106</id>
-  <producto>prod0</producto>
-  <pagado>true</pagado>
+	<id>1</id>
+	<producto>FIFA 22</producto>
 </pedido>
 <pedido>
-  <id>107</id>
-  <producto>prod1</producto>
-  <pagado>true</pagado>
+	<id>2</id>
+	<producto>Assassin's Creed Valhalla</producto>
 </pedido>
 <pedido>
-  <id>108</id>
-  <producto>prod2</producto>
-  <pagado>true</pagado>
+	<id>3</id>
+	<producto>Fornite</producto>
 </pedido>
 <pedido>
-  <id>109</id>
-  <producto>prod3</producto>
-  <pagado>true</pagado>
+	<id>5</id>
+	<producto>Fornite</producto>
 </pedido>
 <pedido>
-  <id>110</id>
-  <producto>prod4</producto>
-  <pagado>true</pagado>
+	<id>6</id>
+	<producto>Fornite</producto>
 </pedido>
 <pedido>
-  <id>111</id>
-  <producto>prod5</producto>
-  <pagado>true</pagado>
+	<id>7</id>
+	<producto>Assassin's Creed Valhalla</producto>
 </pedido>
 <pedido>
-  <id>112</id>
-  <producto>prod6</producto>
-  <pagado>true</pagado>
+	<id>9</id>
+	<producto>Battlefield 2042</producto>
 </pedido>
-<pedido>
-  <id>113</id>
-  <producto>prod7</producto>
-  <pagado>true</pagado>
-</pedido>
-<pedido>
-  <id>114</id>
-  <producto>prod8</producto>
-  <pagado>true</pagado>
-</pedido>
-<pedido>
-  <id>115</id>
-  <producto>prod9</producto>
-  <pagado>true</pagado>
-</pedido>
+{
+	"pedido":
+	{
+		"id": "1",
+		"producto": "FIFA 22"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "2",
+		"producto": "Assassin's Creed Valhalla"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "3",
+		"producto": "Fornite"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "5",
+		"producto": "Fornite"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "6",
+		"producto": "Fornite"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "7",
+		"producto": "Assassin's Creed Valhalla"
+	}
+}
+{
+	"pedido":
+	{
+		"id": "9",
+		"producto": "Battlefield 2042"
+	}
+}
