@@ -20,13 +20,13 @@ public class ArrayListYMetodos {
 		// ArrayList<tipo de dato que se va a almacenar> nombreVariable = new
 		// ArrayList<tipo de dato>();
 		// Un arraylist de enteros
-		ArrayList<Integer> arr = new ArrayList<Integer>();
+		ArrayList<Integer> arr = new ArrayList<>();
 		// Un arraylist de double
-		ArrayList<Double> arrDoub = new ArrayList<Double>();
+		ArrayList<Double> arrDoub = new ArrayList<>();
 		// Un arraylist de Strings donde se van a almacenar los alumnos de una clase
-		ArrayList<String> arrStr = new ArrayList<String>();
+		ArrayList<String> arrStr = new ArrayList<>();
 		// Un arraylist de booleanos
-		ArrayList<Boolean> arrBool = new ArrayList<Boolean>();
+		ArrayList<Boolean> arrBool = new ArrayList<>();
 
 		// A mi array de String le voy a añadir nuevos alumnos
 		arrStr.add("Luis");
@@ -108,7 +108,7 @@ public class ArrayListYMetodos {
 
 	/**
 	 * Método que suma dos variables y devuelve el resultado de la suma. Pepito
-	 * 
+	 *
 	 * @param x
 	 * @param y
 	 * @return
@@ -125,7 +125,7 @@ public class ArrayListYMetodos {
 	/**
 	 * Método que multiplica 3 variables y devuelve el resultado de la
 	 * multiplicacion
-	 * 
+	 *
 	 * @param x
 	 * @param y
 	 * @param z
@@ -140,7 +140,7 @@ public class ArrayListYMetodos {
 
 	/**
 	 * Método que recibe 2 parámetros y devuelve el mayor de esos dos.
-	 * 
+	 *
 	 * @param x
 	 * @param y
 	 * @return resultado de la suma de @x + @y
@@ -159,7 +159,7 @@ public class ArrayListYMetodos {
 
 	/**
 	 * Método que comprueba si un número es cero
-	 * 
+	 *
 	 * @param x
 	 * @return true si 0, false si != 0
 	 */
@@ -177,14 +177,14 @@ public class ArrayListYMetodos {
 
 	/**
 	 * Método que calcula la suma de todos los elementos de un arraylist
-	 * 
+	 *
 	 * @param num . @num indica el tamaño del arraylist. Este tamaño viene por parámetros desde donde sea llamada la función
 	 */
 	public static void sumatoria(int num) {
 
 		Scanner scan = new Scanner(System.in);
 		//Declaro e inicializo un arraylist de Integer (int)
-		ArrayList<Integer> arr = new ArrayList<Integer>();
+		ArrayList<Integer> arr = new ArrayList<>();
 		//Declaro e inicializo el número que introduciría el usuario por teclado
 		int numeroParaIntroducir = 0;
 
@@ -197,9 +197,9 @@ public class ArrayListYMetodos {
 
 		// Con este for realizaría la sumatoria de los elementos
 		int sumatoria = 0; //Variable para almacenar la sumatoria
-		for (int i = 0; i < arr.size(); i++) {
+		for (Integer element : arr) {
 			//sumatoria = sumatoria + posicion i del arraylist
-			sumatoria += arr.get(i); // Obtengo lo que contiene la posición i del arraylist, y lo sumo
+			sumatoria += element; // Obtengo lo que contiene la posición i del arraylist, y lo sumo
 		}
 
 		System.out.println("La sumatoria es: " + sumatoria); //Imprimo por pantalla la sumatoria

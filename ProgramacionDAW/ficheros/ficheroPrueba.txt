@@ -1,0 +1,63 @@
+personaje
+	Yasuo
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	VI
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Garen
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Zed
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Tristana
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Vex
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Janna
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Varus
+	habilidades
+		q:
+		e:
+		w:
+		r:
+personaje
+	Caitlyn
+	habilidades
+		q:
+		e:
+		w:
+		r:

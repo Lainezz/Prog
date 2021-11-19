@@ -10,14 +10,14 @@ public class Tema3Actividad3 {
 		Scanner scan = new Scanner(System.in);
 		int ejer = 1;
 		while (ejer!=0) {
-			
+
 			try {
 				System.out.print("Por favor, indique un ejercicio del 1 al 10 (0 para exit): ");
 				ejer = scan.nextInt();
-			
+
 				switch (ejer) {
 				case 1:
-					System.out.println("Ejercicio 1. Del 0 al 20");					
+					System.out.println("Ejercicio 1. Del 0 al 20");
 					act.delCeroAlVeinte();
 					break;
 				case 2:
@@ -56,14 +56,14 @@ public class Tema3Actividad3 {
 					System.out.println("Ejercicio 10. Los dineros");
 					act.elsDiners();
 					break;
-	
+
 				default:
 					if(ejer!=0) {
 						System.out.println("Error, indique numero del 1 al 10 (0 para salir)");
 					}
 					break;
 				}
-				
+
 			} catch (InputMismatchException e) {
 				System.out.println("Fatal Error, deleting all files on your computer...");
 				break;
@@ -72,31 +72,31 @@ public class Tema3Actividad3 {
 		scan.close();
 
 	}
-	
-	
+
+
 	/*
 	 * RESUELVE TUS EJERCICIOS DENTRO DE CADA METODO.
 	 */
-	
+
 	/**
 	 * Ejercicio 1: Escribe un programa que muestre por pantalla
 	 * los 20 primeros numeros enteros naturales. (1, 2, 3 ... 20)
-	 * 
+	 *
 	 * 0,5 pts
 	 */
 	private void delCeroAlVeinte() {
-		
+
 		for(int i=0; i<=20; i++) {
 			System.out.println(i);
 		}
 
-		
+
 	}
 
 	/**
-	 * Ejercicio 2: Escribe un programa que muestre los numeros 
+	 * Ejercicio 2: Escribe un programa que muestre los numeros
 	 * pares comprendidos entre el 1 y el 200.
-	 * 
+	 *
 	 * 1 pto
 	 */
 	private void pares() {
@@ -109,14 +109,14 @@ public class Tema3Actividad3 {
 	/**
 	 * Ejercicio 3: Escribe un programa que muestre los numeros
 	 * impares comprendidos entre el 1 y el 200.
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void impares() {
 		for(int i=0;i<=200;i++) {
 			if(i%2!=0)System.out.println(i);
 		}
-		
+
 	}
 
 	/**
@@ -130,9 +130,9 @@ public class Tema3Actividad3 {
 	 * 3! = 3 * 2 * 1
 	 * 4! = 4 * 3 * 2 * 1
 	 * 5! = 5 * 4 * 3 * 2 * 1
-	 * 
+	 *
 	 * N! = N * (N-1) * (N-2) * (N-3) * ... * 1
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void factorial() {
@@ -147,43 +147,43 @@ public class Tema3Actividad3 {
 		System.out.println(num+"! = "+factorial);
 	}
 
-	
+
 	/**
 	 * Ejercicio 5. Escribe un programa que lea 10 valores por teclado.
 	 * Al final el programa debe mostrarnos
 	 * cuantos de esos valores han sido numeros negativos.
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void cuantosNeg() {
-		
-		
+
+
 	}
 
 	/**
 	 * Ejercicio 6. Escribe un programa que lea 10 valores por teclado.
 	 * Al final el programa debe mostrarnos
 	 * cuantos de esos valores han sido numeros negativos y cuantos positivos.
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void cuantosPosNeg() {
 
-		
+
 	}
 
-	
+
 
 	/**
 	 * Ejercicio 7. Escribe un programa que lea valores por teclado.
 	 * hasta que se inserte un 0. Al final el programa debe mostrarnos
 	 * cuantos de esos valores han sido numeros negativos y cuantos positivos.
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void cuantosPosNegHQC() {
 
-		
+
 	}
 
 	/**
@@ -193,25 +193,25 @@ public class Tema3Actividad3 {
 	 * 10.
 	 * Al final el programa nos mostrara el resultado de esa potencia.
 	 * NO SE PUEDE USAR EL OPERADOR DE POTENCIA (^)
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void potencias() {
 
-		
+
 	}
 
-	
+
 	/**
 	 * Ejercicio 9: Escribe un programa que sume independientemente
 	 * los pares y los impares de los números comprendidos entre el 100 y el 200.
 	 * Al final el programa nos tiene que mostrar el valor de ambas sumas.
-	 *  
+	 *
 	 * 1 pto
 	 */
 	private void sumParImpar() {
 
-		
+
 	}
 
 	/**
@@ -223,7 +223,7 @@ public class Tema3Actividad3 {
 	 * que será necesario 1 billete de 100 €, 2 billetes de 20 € y 1 billete de 5 € (no
 	 * será válido por ejemplo 29 billetes de 5, que aunque sume 145 € no es el
 	 * mínimo número de billetes posible).
-	 * 
+	 *
 	 * 1 pto
 	 */
 	private void elsDiners() {
@@ -238,22 +238,22 @@ public class Tema3Actividad3 {
 		int billDos = 0;
 		while (dinero>0) {
 			billQui = dinero/500;
-			dinero = dinero%500;		
-			
+			dinero = dinero%500;
+
 		}
 		System.out.println("Se utilizan "+billQui+" de 500€");
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
 	}
-	
+
 	/*
 	 * Escribe al principio del documento usando comentarios.
 	 * Nombre y apellidos
 	 * Programacion
 	 * Actividad 3
-	 * 
+	 *
 	 * 0,5 pts
-	 * 
+	 *
 	 */
 
 }
