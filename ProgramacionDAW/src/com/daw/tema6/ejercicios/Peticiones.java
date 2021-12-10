@@ -9,6 +9,10 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.Writer;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.hc.client5.http.classic.methods.HttpGet;
@@ -21,7 +25,7 @@ import org.apache.hc.core5.http.io.entity.EntityUtils;
 
 public class Peticiones {
 
-
+	
 	/**
 	 * Metodo que realiza una petición HTTP a la API de Rito pls.
 	 * La respuesta recibida se persistirá en un archivo que viene indicado en la ruta
@@ -29,7 +33,7 @@ public class Peticiones {
 	 * @param ruta (lugar donde queremos persistir la respuesta)
 	 * @throws IOException
 	 */
-	public static void realizarPetGet(String peticion, String ruta) throws IOException {
+	public void realizarPetGet(String peticion, String ruta) throws IOException {
 		
 		BufferedWriter bw = null;
 		BufferedReader br = null;
@@ -83,7 +87,7 @@ public class Peticiones {
 		}
 	}
 
-	public static void cerrarFlujos(Writer w, Reader r) {
+	public void cerrarFlujos(Writer w, Reader r) {
 		try {
 			if(w!=null) {
 				System.out.println("Flujo de escritura cerrado correctamente");

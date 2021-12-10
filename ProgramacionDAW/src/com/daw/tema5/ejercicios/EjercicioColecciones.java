@@ -32,38 +32,37 @@ public class EjercicioColecciones {
 	}
 
 	public static void bienvenida() {
-		System.out.print("\n COMIENZO DEL PROGRAMA\n");
-		int whiteSpaces=5;
-		int dots=0;
+		System.out.print("\nCOMIENZO DEL PROGRAMA\n");
+		int espacios=5;
+		int puntos=0;
 
-		while(dots<=whiteSpaces) {
-			impIzq(whiteSpaces, dots);
-			impDcha(dots-1);
-			salto();
+		while(puntos<=espacios) {
+			
+			impIzq(espacios, puntos);
+			impDcha(puntos-1);
+			saltoDeLinea();
 
-			dots+=1;
+			puntos+=1;
 
 		}
-
-		System.out.print("\n Bienvenido a Bike Taller");
 	}
 
-	public static void impIzq(int whiteSpaces, int dots) {
-		for(int i=0; i<(whiteSpaces-dots); i++) {
+	public static void impIzq(int espacios, int puntos) {
+		for(int i=0; i<(espacios-puntos); i++) {
 			System.out.print(" ");
 		}
-		for(int j=0; j<dots; j++) {
+		for(int j=0; j<puntos; j++) {
 			System.out.print("*");
 		}
 	}
 
-	public static void impDcha(int dots) {
-		for(int j=0; j<dots; j++) {
+	public static void impDcha(int puntos) {
+		for(int j=0; j<puntos; j++) {
 			System.out.print("*");
 		}
 	}
 
-	public static void salto() {
+	public static void saltoDeLinea() {
 		System.out.print("\n");
 	}
 

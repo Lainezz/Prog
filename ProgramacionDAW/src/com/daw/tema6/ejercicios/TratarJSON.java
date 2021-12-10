@@ -23,7 +23,7 @@ public class TratarJSON {
 	 * junto con varias características
 	 * @param ruta (String. Ruta donde queremos persistir los datos obtenidos de esa petición HTTP)
 	 */
-	public static void obtenerPersonajes(String ruta) {
+	public void obtenerPersonajes(String ruta) {
 		Peticiones pet = new Peticiones();
 		String peticion = "http://ddragon.leagueoflegends.com/cdn/11.23.1/data/en_US/champion.json";
 		
@@ -40,7 +40,7 @@ public class TratarJSON {
 	 * @param ruta (Ruta en la que está el archivo que se quiere leer)
 	 * @return String que contiene toda la lectura del fichero
 	 */
-	public static String leerFichero(String ruta) {
+	public String leerFichero(String ruta) {
 		
 		StringBuilder sb = new StringBuilder();
 		BufferedReader br = null;
@@ -85,7 +85,7 @@ public class TratarJSON {
 	 * @param cad (String con un formato JSON que contiene la respuesta HTTP hecha)
 	 * @return String (contiene los datos que hemos extraído del JSON)
 	 */
-	public static String domarALaBestiaParda(String cad) {
+	public String domarALaBestiaParda(String cad) {
 		
 		StringBuilder sb = new StringBuilder();
 		JSONObject request = new JSONObject(cad);
@@ -133,7 +133,7 @@ public class TratarJSON {
 	 * @param texto (tipo String. Es el texto a escribir en el fichero)
 	 * @param ruta (tipo String. Es la ruta donde especificamos que tiene que escribirse el fichero)
 	 */
-	public static void escribirFichero(String texto, String ruta) {
+	public void escribirFichero(String texto, String ruta) {
 		BufferedWriter bw = null;
 		try {
 			//1º Abrimos el fichero donde queramos escribir / leer
@@ -167,7 +167,7 @@ public class TratarJSON {
 	 * @param w (Writer de escritura)
 	 * @param r (Reader de lectura)
 	 */
-	public static void cerrarFlujos(Writer w, Reader r) {
+	public void cerrarFlujos(Writer w, Reader r) {
 		try {
 			if(w!=null) {
 				System.out.println("Flujo de escritura cerrado correctamente");
