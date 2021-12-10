@@ -45,19 +45,23 @@ public class ClasesJava {
 		amigo.empleo(empleoConseguido);
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+		//ACTIVIDAD CLASE
+		/*
+		 * 1. Crear una clase coche 
+		 * OPCIONAL
+		 * 2. (buscar en Internet) Crear otras clases "Furgoneta" "TodoCamino" "4x4" ...
+		 * 3. Realizar herencia entre coche y las demás clases que habéis creado
+		 * 
+		 * 4. Crear los atributos que creais convenientes (que contenga String... int..
+		 * arrays... ArrayLists... lo que queráis)
+		 * 
+		 * 5. Crear una o dos funcionalidades.
+		 * 
+		 * 6. En otra clase... crear e instanciar 2 o 3 objetos de tipo Coche
+		 * 7. Dar valores a los atributos de los diferentes objetos
+		 * 8. Llamar a las funcionalidades de vuestros objetos
+		 * 
+		 */
 	}
 
 }
