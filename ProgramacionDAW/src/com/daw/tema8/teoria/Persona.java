@@ -23,6 +23,26 @@ public class Persona {
 	boolean carnetConducir;
 	boolean conGafas;
 	
+	//CONSTRUCTOR
+	public Persona(String nombre, String dni, int edad, int anio) {
+		
+		this.nombre = nombre;
+		this.dni = dni;
+		this.edad = edad;
+		this.anio = anio;
+		System.out.println("Hola amijo");
+		
+	}
+	
+	public Persona(String nombre) {
+		
+		this.nombre = nombre;		
+	}
+	
+	public Persona() {
+		
+	}
+	
 	//FUNCIONALIDADES
 	public void presentacion() {
 		System.out.println("Hola, mi nombre es "+this.nombre+" y tengo "+this.edad+" anios");

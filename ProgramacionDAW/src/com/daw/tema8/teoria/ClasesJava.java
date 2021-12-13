@@ -1,5 +1,7 @@
 package com.daw.tema8.teoria;
 
+import java.util.ArrayList;
+
 public class ClasesJava {
 
 	public static void main(String[] args) {
@@ -44,24 +46,23 @@ public class ClasesJava {
 		boolean empleoConseguido = true;
 		amigo.empleo(empleoConseguido);
 		
+		Persona p = new Persona("Diego", "548393747s", 31, 1989);
+		System.out.println("PERSONA DE PRUEBA");
+		System.out.println(p.nombre);
+		System.out.println(p.dni);
+		System.out.println(p.edad);
+	
+
+		Pokemon charm = new Pokemon("Charmander", "Fuego", 1200);
+		Ataque ataque1 = new Ataque("Ascuas", "Fuego", 100);
+		Ataque ataque2 = new Ataque("Placaje", "Normal", 60);
+		Ataque ataque3 = new Ataque("Llamarada", "Fuego", 150);
 		
-		//ACTIVIDAD CLASE
-		/*
-		 * 1. Crear una clase coche 
-		 * OPCIONAL
-		 * 2. (buscar en Internet) Crear otras clases "Furgoneta" "TodoCamino" "4x4" ...
-		 * 3. Realizar herencia entre coche y las demás clases que habéis creado
-		 * 
-		 * 4. Crear los atributos que creais convenientes (que contenga String... int..
-		 * arrays... ArrayLists... lo que queráis)
-		 * 
-		 * 5. Crear una o dos funcionalidades.
-		 * 
-		 * 6. En otra clase... crear e instanciar 2 o 3 objetos de tipo Coche
-		 * 7. Dar valores a los atributos de los diferentes objetos
-		 * 8. Llamar a las funcionalidades de vuestros objetos
-		 * 
-		 */
+		charm.ataques = new ArrayList<Ataque>();
+		charm.ataques.add(ataque1);
+		charm.ataques.add(ataque2);
+		charm.ataques.add(ataque3);
+		
 	}
 
 }
