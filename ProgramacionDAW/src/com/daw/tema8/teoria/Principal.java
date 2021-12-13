@@ -2,7 +2,7 @@ package com.daw.tema8.teoria;
 
 import java.util.ArrayList;
 
-public class ClasesJava {
+public class Principal {
 
 	public static void main(String[] args) {
 
