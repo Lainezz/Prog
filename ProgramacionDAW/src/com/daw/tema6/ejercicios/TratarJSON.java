@@ -16,8 +16,8 @@ import org.json.JSONObject;
 
 public class TratarJSON {
 
-	
-	
+
+
 	/**
 	 * Metodo que realiza una peticion HTTP relativa a obtener todos los personajes del LOL
 	 * junto con varias características
@@ -26,7 +26,7 @@ public class TratarJSON {
 	public void obtenerPersonajes(String ruta) {
 		Peticiones pet = new Peticiones();
 		String peticion = "http://ddragon.leagueoflegends.com/cdn/11.23.1/data/en_US/champion.json";
-		
+
 		try {
 			pet.realizarPetGet(peticion, ruta);
 		} catch (Exception e) {
@@ -41,7 +41,7 @@ public class TratarJSON {
 	 * @return String que contiene toda la lectura del fichero
 	 */
 	public String leerFichero(String ruta) {
-		
+
 		StringBuilder sb = new StringBuilder();
 		BufferedReader br = null;
 		try {
@@ -59,14 +59,14 @@ public class TratarJSON {
 				//4º Operamos con nuestro fichero. En este caso, si queremos leer todo el documento, lo hacemos con un while.
 				String linea = new String(br.readLine());
 				while(linea!=null) {
-					sb.append(linea);		
+					sb.append(linea);
 					linea = br.readLine();
 				}
 
 			} else {
 				System.out.println("El fichero no existe");
 			}
-			
+
 
 		} catch (IOException e) {
 			System.err.println("Error al leer el archivo: "+e.getMessage());
@@ -75,10 +75,10 @@ public class TratarJSON {
 		} finally {
 			cerrarFlujos(null, br);
 		}
-		
+
 		return sb.toString();
 	}
-	
+
 	/**
 	 * Se recibe un String cad que es el JSON que recibimos en el cuerpo de la respuesta HTTP.
 	 * Ese JSON hay que tratarlo para extraer los datos que se desean.
@@ -86,13 +86,13 @@ public class TratarJSON {
 	 * @return String (contiene los datos que hemos extraído del JSON)
 	 */
 	public String domarALaBestiaParda(String cad) {
-		
+
 		StringBuilder sb = new StringBuilder();
 		JSONObject request = new JSONObject(cad);
-		
+
 		JSONObject data = request.getJSONObject("data");
 		for (Entry<String, Object> entry : data.toMap().entrySet()) {
-			
+
 			String key = entry.getKey();
 			sb.append(key+":\n");
 			if (entry.getValue() instanceof Map) {
@@ -127,7 +127,7 @@ public class TratarJSON {
 		}
 		return sb.toString();
 	}
-	
+
 	/**
 	 * Escribe un fichero de texto plano dados un texto y una ruta donde se quiere crear el fichero
 	 * @param texto (tipo String. Es el texto a escribir en el fichero)
@@ -159,9 +159,9 @@ public class TratarJSON {
 			//5º Cerrar el flujo
 			cerrarFlujos(bw, null);
 		}
-		
+
 	}
-	
+
 	/**
 	 * Metodo que cierra los flujos tanto de escritura como de lectura
 	 * @param w (Writer de escritura)
@@ -180,7 +180,7 @@ public class TratarJSON {
 		} catch (IOException e) {
 			System.err.println("Error cerrando los flujos de Lectura/Escritura: "+e.getMessage());
 		}
-		
+
 	}
-	
+
 }

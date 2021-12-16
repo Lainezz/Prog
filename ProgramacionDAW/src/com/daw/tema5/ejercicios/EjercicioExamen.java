@@ -8,7 +8,7 @@ public class EjercicioExamen {
 		int puntos=0;
 
 		while(puntos<=espacios) {
-			
+
 			for(int i=0; i<(espacios-puntos); i++) {
 				System.out.print(" ");
 			}
@@ -24,7 +24,7 @@ public class EjercicioExamen {
 
 		}
 	}
-	
+
 	public static void impIzq(int espacios, int puntos) {
 		for(int i=0; i<(espacios-puntos); i++) {
 			System.out.print(" ");

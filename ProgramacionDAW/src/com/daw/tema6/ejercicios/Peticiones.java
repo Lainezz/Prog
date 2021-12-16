@@ -9,10 +9,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.Writer;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.hc.client5.http.classic.methods.HttpGet;
@@ -25,7 +21,7 @@ import org.apache.hc.core5.http.io.entity.EntityUtils;
 
 public class Peticiones {
 
-	
+
 	/**
 	 * Metodo que realiza una petición HTTP a la API de Rito pls.
 	 * La respuesta recibida se persistirá en un archivo que viene indicado en la ruta
@@ -34,10 +30,10 @@ public class Peticiones {
 	 * @throws IOException
 	 */
 	public void realizarPetGet(String peticion, String ruta) throws IOException {
-		
+
 		BufferedWriter bw = null;
 		BufferedReader br = null;
-		
+
 		try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
 		    HttpGet httpGet = new HttpGet(peticion);
 			// The underlying HTTP connection is still held by the response object
@@ -52,7 +48,7 @@ public class Peticiones {
 
 		        //Get the body of the response
 		        HttpEntity entity1 = response1.getEntity();
-		        
+
 		        //Lee el cuerpo de la respuesta byte a byte.
 		        //Como getContent() devuelve un InputStream, entonces debemos usar la clase InputStream
 		        //para después convertirlo a un BufferedReader (si queremos).
@@ -61,7 +57,7 @@ public class Peticiones {
 		        br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8), 8);
 		        //Abrimos/Creamos nuestro flujo de escritura
 		        bw = new BufferedWriter(new FileWriter(new File(ruta)));
-		        
+
 		        //Procedemos a leer el contenido de la respuesta (ya almacenado en un BufferedReader
 		        StringBuilder sb = new StringBuilder();
 		        String linea = br.readLine();
@@ -80,7 +76,7 @@ public class Peticiones {
 		    } catch (IOException e) {
 				System.err.println("Error "+e.getMessage());
 			} finally {
-				
+
 				//5º Cerramos el flujo de lectura y de escritura
 				cerrarFlujos(bw, br);
 			}
@@ -100,6 +96,6 @@ public class Peticiones {
 		} catch (IOException e) {
 			System.err.println("Error cerrando los flujos de Lectura/Escritura: "+e.getMessage());
 		}
-		
+
 	}
 }

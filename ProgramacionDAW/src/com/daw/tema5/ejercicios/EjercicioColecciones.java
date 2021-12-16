@@ -37,7 +37,7 @@ public class EjercicioColecciones {
 		int puntos=0;
 
 		while(puntos<=espacios) {
-			
+
 			impIzq(espacios, puntos);
 			impDcha(puntos-1);
 			saltoDeLinea();

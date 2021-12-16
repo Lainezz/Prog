@@ -18,15 +18,15 @@ public class Ficheros {
 
 		//Ejemplos de escritura en Ficheros
 		escrituraFichero();
-		
+
 		//Ejemplos de lectura de ficheros
 		leerFichero();
-		
+
 		//Ejemplo de lectura y escritura
 		lecturaYEscrituraFichero();
 	}
-	
-	
+
+
 	/**
 	 * /////////////////////////////////////////////////
 	 * //////////////ESCRITURA DE FICHEROS//////////////
@@ -172,11 +172,11 @@ public class Ficheros {
 			System.err.print(e.getMessage());
 		}
 	}
-	
+
 	/**
 	 * /////////////////////////////////////////////////
 	 * //////////////LECTURA DE FICHEROS////////////////
-	 * ///////////////////////////////////////////////// 
+	 * /////////////////////////////////////////////////
 	 */
 	public static void leerFichero() {
 		/*
@@ -215,18 +215,18 @@ public class Ficheros {
 		}
 	}
 
-	
+
 	/**
 	 * ////////////////////////////////////////////////////////////
 	 * //////////////EJEMPLO DE LECTURA Y ESCRITURA////////////////
-	 * //////////////////////////////////////////////////////////// 
+	 * ////////////////////////////////////////////////////////////
 	 */
 	public static void lecturaYEscrituraFichero() {
 		/*
-		 * Empezamos escribiendo un fichero 
-		 * En este caso intentamos persistir los datos almacenados en un Map 
+		 * Empezamos escribiendo un fichero
+		 * En este caso intentamos persistir los datos almacenados en un Map
 		 * que contiene una serie de personajes del juego League Of Legends junto con sus habilidades
-		 * 
+		 *
 		 * TODO: meter las habilidades de cada personaje.
 		 */
 		try {
@@ -246,7 +246,7 @@ public class Ficheros {
 			// CREAR UN MAPA <STRING, ARRAYLIST<STRING>> . LA CLAVE ES EL NOMBRE DEL PSJ DEL LOL Y EL ARRAYLIST
 			// CONTIENE LAS HABILIDADES DEL PERSONAJE.
 			Map<String, ArrayList<String>> personajes = new HashMap<>();
-			
+
 			//Insertamos varias claves-valores en el MAP (Clave = String, Valor = new ArrayList<String>
 			personajes.put("Yasuo", new ArrayList<String>());
 			personajes.put("Garen", new ArrayList<String>());
@@ -257,7 +257,7 @@ public class Ficheros {
 			personajes.put("VI", new ArrayList<String>());
 			personajes.put("Tristana", new ArrayList<String>());
 			personajes.put("Vex", new ArrayList<String>());
-			
+
 			//Populamos (llenamos, metemos, insertamos) con valores el ArrayList<String>
 			personajes.get("Yasuo").add("q:");
 			personajes.get("Yasuo").add("e:");

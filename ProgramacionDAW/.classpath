@@ -90,5 +90,6 @@
 	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-annotations-2.13.0-rc1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-core-2.13.0-rc1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-databind-2.13.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Gson/gson-2.8.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

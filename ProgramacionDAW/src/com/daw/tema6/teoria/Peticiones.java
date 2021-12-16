@@ -21,7 +21,7 @@ public class Peticiones {
 
 
 	public static void realizarPetGet(String peticion, String ruta) throws IOException {
-		
+
 		try (CloseableHttpClient httpclient = HttpClients.createDefault()) {
 		    HttpGet httpGet = new HttpGet(peticion);
 			// The underlying HTTP connection is still held by the response object
@@ -36,7 +36,7 @@ public class Peticiones {
 
 		        //Get the body of the response
 		        HttpEntity entity1 = response1.getEntity();
-		        
+
 		        //Lee el cuerpo de la respuesta byte a byte.
 		        //Como getContent() devuelve un InputStream, entonces debemos usar la clase InputStream
 		        //para después convertirlo a un BufferedReader (si queremos).
@@ -45,7 +45,7 @@ public class Peticiones {
 		        BufferedReader br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8), 8);
 		        //Abrimos/Creamos nuestro flujo de escritura
 		        BufferedWriter bw = new BufferedWriter(new FileWriter(new File(ruta)));
-		        
+
 		        //Procedemos a leer el contenido de la respuesta (ya almacenado en un BufferedReader
 		        StringBuilder sb = new StringBuilder();
 		        String linea = br.readLine();
@@ -57,8 +57,8 @@ public class Peticiones {
 				}
 				//Escribimos el contenido del StringBuilder en nuestro archivo de texto plano
 				bw.write(sb.toString());
-				
-				
+
+
 				//5º Cerramos el flujo de lectura y de escritura
 				br.close();
 				bw.close();
