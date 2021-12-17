@@ -9,4 +9,8 @@ public class Ataque {
 		this.tipo = tipo;
 		this.danio = danio;
 	}
+	
+	public Ataque(String nombre) {
+		this.nombre = nombre;
+	}
 }

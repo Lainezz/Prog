@@ -1,6 +1,7 @@
 package com.daw.tema8.teoria;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Principal {
 
@@ -53,18 +54,18 @@ public class Principal {
 		System.out.println(p.edad);
 
 
-		Pokemon charm = new Pokemon("Charmander", "Fuego", 1200);
+		Pokemon charm = new Pokemon("Charmander", Tipo.FIRE, 1200);
 		Ataque ataque1 = new Ataque("Ascuas", "Fuego", 100);
 		Ataque ataque2 = new Ataque("Placaje", "Normal", 60);
 		Ataque ataque3 = new Ataque("Llamarada", "Fuego", 150);
 
-		charm.ataques = new ArrayList<>();
-		charm.ataques.add(ataque1);
-		charm.ataques.add(ataque2);
-		charm.ataques.add(ataque3);
+		Ataque[] arrToSet = new Ataque[] {ataque1, ataque2, ataque3};
+		charm.setAtaques(arrToSet);
+		charm.printAtaques();
+
 		
-		Pokemon pika = new Pokemon("Pikachu", Tipo.ELECTRICO, 1200);
-		System.out.println(pika.tipoE);
+		Pokemon pika = new Pokemon("Pikachu", Tipo.ELECTRIC, 1200);
+		System.out.println(pika.getTipo());
 
 	}
 

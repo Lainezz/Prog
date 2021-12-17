@@ -1,14 +1,33 @@
 package com.daw.tema8.teoria;
 
-import java.util.ArrayList;
-
 public enum Tipo {
 	
-	AGUA,
-	FUEGO,
-	VOLADOR,
-	ELECTRICO,
-	ROCA;
+	NORMAL,
+	FIGHTING,
+	FLYING,
+	POISON,
+	GROUND,
+	ROCK,
+	BUG,
+	GHOST,
+	STEEL,
+	FIRE,
+	WATER,
+	GRASS,
+	ELECTRIC,
+	PSYCHIC,
+	ICE,
+	DRAGON,
+	DARK,
+	FAIRY,
+	UNKNOWN,
+	SHADOW;
+	
+	public static Tipo setTipo(String tipo) {
+		
+		return Tipo.valueOf(tipo.toUpperCase());
+		
+	}
 	
 	
 }
