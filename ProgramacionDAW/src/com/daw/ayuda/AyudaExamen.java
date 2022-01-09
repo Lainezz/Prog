@@ -35,7 +35,7 @@ public class AyudaExamen {
 		}
 		System.out.println(factorial);
 
-		/////
+		///////
 		n = 0;
 		int f = 1;
 		for(int i=n; i>0; i--) {
