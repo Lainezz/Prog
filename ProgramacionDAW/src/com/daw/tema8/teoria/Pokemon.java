@@ -1,34 +1,41 @@
 package com.daw.tema8.teoria;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Pokemon {
 
 	private String nombre, url;
 	private Tipo tipo;
 	private int vida;
-	private Ataque[] ataques;
+	private ArrayList<Ataque> ataques;
 
 	//CONSTRUCTORES
 	public Pokemon() {
-		this.ataques = new Ataque[4];
+		this.ataques = new ArrayList<Ataque>();
 	}
 
 	public Pokemon(String nombre, Tipo tipo, int vida) {
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.vida = vida;
-		this.ataques = new Ataque[4];
+		this.ataques = new ArrayList<Ataque>();
+	}
+	
+	public Pokemon(String nombre, int vida) {
+		this.nombre = nombre;
+		this.vida = vida;
 	}
 	
 	
 	
 	public void presentacion() {
 		System.out.format("[Pokemon %s con habilidades: [", this.nombre);
-		for(Ataque at : this.ataques) {
-			if(at==null) break;
-			System.out.format(" %s", at.nombre);
-			
+		Random random = new Random();
+		int nRand = 0;
+		for(int i =0; i<4; i++) {
+			nRand = random.nextInt(ataques.size());
+			System.out.format(" %s", ataques.get(nRand).nombre);
 		}
 		System.out.format("] y es de tipo %s%n", this.tipo.toString().toLowerCase());
 	}
@@ -42,6 +49,17 @@ public class Pokemon {
 
 		
 		return this.vida - ataque.danio;
+	}
+	
+	
+	public void probabilidadDeAmor(Pokemon pok) {
+		
+		if(this.tipo == pok.tipo) {
+			System.out.println("Amor ciego");
+		} else {
+			System.out.println("También amor ciego");
+		}
+		
 	}
 	
 	/**
@@ -80,12 +98,12 @@ public class Pokemon {
 		this.vida = vida;
 	}
 
-	public Ataque[] getAtaques() {
+	public ArrayList<Ataque> getAtaques() {
 		
 		return ataques;
 	}
 
-	public void setAtaques(Ataque[] ataques) {
+	public void setAtaques(ArrayList<Ataque> ataques) {
 		this.ataques = ataques;
 	}
 

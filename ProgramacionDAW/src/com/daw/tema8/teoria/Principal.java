@@ -59,8 +59,7 @@ public class Principal {
 		Ataque ataque2 = new Ataque("Placaje", "Normal", 60);
 		Ataque ataque3 = new Ataque("Llamarada", "Fuego", 150);
 
-		Ataque[] arrToSet = new Ataque[] {ataque1, ataque2, ataque3};
-		charm.setAtaques(arrToSet);
+
 		charm.printAtaques();
 
 		

@@ -53,7 +53,6 @@ public class HandleJSON {
 	
 	public void setDatosPokemonFromJson(String cad, Pokemon pok) {
 		
-		int i = 0;
 		JSONObject request = new JSONObject(cad);
 
 		//JSONObject data = request.getJSONObject("results");
@@ -62,7 +61,11 @@ public class HandleJSON {
 
 			String key = entry.getKey();
 			
-			if(key.equals("moves") || key.equals("types")) {
+			if(key.equals("name")) {
+				
+				//pok.setNombre((String)entry.getValue());
+			
+			}else if(key.equals("moves") || key.equals("types")) {
 				
 				if (entry.getValue() instanceof ArrayList) {
 					ArrayList<HashMap<String, Object>> entryArr = (ArrayList<HashMap<String, Object>>) entry.getValue();
@@ -70,12 +73,9 @@ public class HandleJSON {
 					for (HashMap<String, Object> hm : entryArr) {
 						
 						if(hm.get("move") instanceof Map) {
-							if(i<4) {
-								HashMap<String, Object> hm2 = (HashMap<String, Object>) hm.get("move");
-								Ataque at = new Ataque((String)hm2.get("name"));
-								pok.getAtaques()[i] = at; 
-								i++;
-							}
+							HashMap<String, Object> hm2 = (HashMap<String, Object>) hm.get("move");
+							Ataque at = new Ataque((String)hm2.get("name"));
+							pok.getAtaques().add(at); 
 						}
 						
 						if(hm.get("type") instanceof Map) {
