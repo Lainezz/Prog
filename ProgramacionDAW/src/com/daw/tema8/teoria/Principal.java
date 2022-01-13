@@ -1,8 +1,5 @@
 package com.daw.tema8.teoria;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class Principal {
 
 	public static void main(String[] args) {
@@ -62,9 +59,15 @@ public class Principal {
 
 		charm.printAtaques();
 
-		
+
 		Pokemon pika = new Pokemon("Pikachu", Tipo.ELECTRIC, 1200);
 		System.out.println(pika.getTipo());
+		
+		Pokemon otro = new Pokemon();
+		System.out.println(otro.getNombre());
+		System.out.println(otro.vivo);
+		
+		
 
 	}
 

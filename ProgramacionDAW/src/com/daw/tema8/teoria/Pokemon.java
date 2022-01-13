@@ -9,6 +9,7 @@ public class Pokemon {
 	private Tipo tipo;
 	private int vida;
 	private ArrayList<Ataque> ataques;
+	boolean vivo = true;
 
 	//CONSTRUCTORES
 	public Pokemon() {
@@ -26,9 +27,9 @@ public class Pokemon {
 		this.nombre = nombre;
 		this.vida = vida;
 	}
-	
-	
-	
+
+
+
 	public void presentacion() {
 		System.out.format("[Pokemon %s con habilidades: [", this.nombre);
 		Random random = new Random();
@@ -39,7 +40,7 @@ public class Pokemon {
 		}
 		System.out.format("] y es de tipo %s%n", this.tipo.toString().toLowerCase());
 	}
-	
+
 	/**
 	 * Método que resta vida a un pokemon al recibir un ataque
 	 * @param ataque
@@ -47,7 +48,7 @@ public class Pokemon {
 	 */
 	public int recibirAtaque(Ataque ataque) {
 
-		
+
 		return this.vida - ataque.danio;
 	}
 	
@@ -66,13 +67,13 @@ public class Pokemon {
 	 * Método que imprime por pantalla los ataques que tiene un pokemon
 	 */
 	public void printAtaques() {
-		
+
 		for(Ataque ataque : this.ataques) {
 			System.out.format("[Ataque %s con danio %d y de tipo %s]%n", ataque.nombre, ataque.danio, ataque.tipo);
 		}
 	}
-	
-	
+
+
 	//GETTERS AND SETTERS
 	public String getNombre() {
 		return nombre;
@@ -115,7 +116,7 @@ public class Pokemon {
 		this.url = url;
 	}
 
-	
-	
-	
+
+
+
 }
