@@ -10,7 +10,7 @@ import java.io.Reader;
 import java.io.Writer;
 
 public class Fichero {
-	
+
 	/**
 	 * Lee el fichero donde se ha escrito (persistido) la respuesta HTTP realizada.
 	 * Esta respuesta tiene formato JSON
@@ -55,7 +55,7 @@ public class Fichero {
 
 		return sb.toString();
 	}
-	
+
 	/**
 	 * Escribe un fichero de texto plano dados un texto y una ruta donde se quiere crear el fichero
 	 * @param texto (tipo String. Es el texto a escribir en el fichero)
@@ -89,7 +89,7 @@ public class Fichero {
 		}
 
 	}
-	
+
 	/**
 	 * Metodo que cierra los flujos tanto de escritura como de lectura
 	 * @param w (Writer de escritura)
