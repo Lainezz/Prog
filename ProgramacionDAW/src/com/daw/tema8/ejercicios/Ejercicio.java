@@ -19,7 +19,7 @@ public class Ejercicio {
 	 *
 	 *
 	 * PARTE B. 3 puntos.
-	 *
+	 * 
 	 * ¿En qué consiste el agrupamiento por paquetes en la POO?
 	 * Indica las tres ventajas y explica brevemente cada una de ellas.
 	 *
@@ -49,12 +49,12 @@ public class Ejercicio {
 	 * 		a. Esta funcionalidad recibe por parámetros el tipo del pokemon y el tipo del ataque
 	 * 		b. Comprueba la efectividad de ese ataque contra ese pokemon
 	 * 		c. Devuelve "algo" para adaptar el daño del ataque al pokemon dado
-	 *
+	 * 
 	 * 6 = 2 puntos
 	 * 6. Crear una clase principal, con un main, que simule un combate pokemon entre pokemons previamente creados
 	 * 		a. En el combate se tiene que poder decidir qué pokemon se enfrenta a qué pokemon
 	 * 		b. Se realizan ataques entre los pokemons, por turnos, hasta que se debiliten todos los pokemons de un bando y se proclame un ganador
-	 *
+	 * 
 	 * 7 = 1 punto
 	 * 7. (para el 10) Complicación del ejercicio.
 	 * 		a. Los tipos (tanto de los pokemon como de los ataques) deben ser una clase Enum.
@@ -62,10 +62,10 @@ public class Ejercicio {
 	 * 		c. Una clase entrenador que contenga un array de Pokemons de 6 posiciones como máximo
 	 * 		d. Un pokemon no puede tener más de 4 ataques
 	 * 		e. El combate puede ser de 1 entrenador contra otro entrenador. El cual puede tener hasta 6 pokemons.
-	 *
-	 *
+	 * 
+	 * 
 	 *
 	 */
-
+	
 
 }

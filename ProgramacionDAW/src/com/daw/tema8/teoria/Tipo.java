@@ -1,7 +1,7 @@
 package com.daw.tema8.teoria;
 
 public enum Tipo {
-
+	
 	NORMAL,
 	FIGHTING,
 	FLYING,
@@ -22,12 +22,12 @@ public enum Tipo {
 	FAIRY,
 	UNKNOWN,
 	SHADOW;
-
+	
 	public static Tipo setTipo(String tipo) {
-
+		
 		return Tipo.valueOf(tipo.toUpperCase());
-
+		
 	}
-
-
+	
+	
 }

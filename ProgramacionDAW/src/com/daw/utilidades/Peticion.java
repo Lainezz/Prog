@@ -20,22 +20,22 @@ import org.apache.hc.core5.http.io.entity.EntityUtils;
 
 
 public class Peticion {
-
+	
 	/**
 	 * Metodo que realiza una peticion HTTP relativa a obtener los datos que se deseen
 	 * junto con varias características
 	 * @param ruta (String. Ruta donde queremos persistir los datos obtenidos de esa petición HTTP)
 	 */
 	public void obtenerPersonajes(String peticionUrl, String rutaFicheroToWrite) {
-
+		
 		try {
 			realizarPetGet(peticionUrl, rutaFicheroToWrite);
 		} catch (Exception e) {
 			System.err.println("Error "+e.getMessage());
 		}
 	}
-
-
+	
+	
 	/**
 	 * Metodo que realiza una petición HTTP a la API de Rito pls.
 	 * La respuesta recibida se persistirá en un archivo que viene indicado en la ruta
@@ -112,5 +112,5 @@ public class Peticion {
 		}
 
 	}
-
+	
 }

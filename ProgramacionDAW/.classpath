@@ -6,34 +6,90 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/Gson/gson-2.8.9.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/commons-cli-1.4.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/commons-codec-1.15.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-cache-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-fluent-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-testing-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-win-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-h2-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-reactive-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-testing-5.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/jna-5.2.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/jna-platform-5.2.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/reactive-streams-1.0.3.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/rxjava-2.2.8.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/slf4j-api-1.7.25.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/Jackson/jackson-annotations-2.13.0-rc1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/Jackson/jackson-core-2.13.0-rc1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/Jackson/jackson-databind-2.13.0-rc1.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/Json/json-20210307.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-examples-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-excelant-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-javadoc-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-ooxml-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-ooxml-full-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-ooxml-lite-5.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/Workspaces/Librerias/poi-bin-5.1.0-20211024/poi-bin-5.1.0/poi-scratchpad-5.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/commons-cli-1.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/commons-codec-1.15.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-cache-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-fluent-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-testing-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpclient5-win-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-h2-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-reactive-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/httpcore5-testing-5.1.2.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/jna-5.2.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/jna-platform-5.2.0.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/reactive-streams-1.0.3.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/rxjava-2.2.8.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/lib/slf4j-api-1.7.25.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/diego/Desktop/Workspaces/Librerias/httpcomponents-client-5.1.2-bin/javadoc/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Json/json-20210307.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-annotations-2.13.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-core-2.13.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Jackson/jackson-databind-2.13.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Desktop/Workspaces/Librerias/Gson/gson-2.8.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
